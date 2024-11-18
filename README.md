@@ -1,4 +1,4 @@
-### Retail Sales Analysis
+### Retail Sales Analysis - with Python and SQL
 
 Dataset Description
 This dataset contains detailed order information for a retail business. Below are the key details based on the structure:
