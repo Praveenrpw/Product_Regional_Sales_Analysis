@@ -18,8 +18,8 @@ This dataset appears to track orders, shipping details, and product financials. 
 Loading the Dataset: 
 Used Pandas to load the dataset from a .csv file into a DataFrame (pd.read_csv).
 
-	-- Handled missing values by replacing entries such as 'Not Available' and 'unknown' with NaN using the na_values parameter.
-	-- Verified column data types (dtypes) to ensure the correctness of the data structure.
+-- Handled missing values by replacing entries such as 'Not Available' and 'unknown' with NaN using the na_values parameter.
+-- Verified column data types (dtypes) to ensure the correctness of the data structure.
 
 2. Data Exploration:
 Exploring the Data:
