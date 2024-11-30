@@ -14,7 +14,8 @@ This dataset appears to track orders, shipping details, and product financials. 
 
 
 ### Data Analysis Using Numpy, Pandas
-1. Data Loading: 
+1. Data Loading:
+   
 Loading the Dataset: 
 Used Pandas to load the dataset from a .csv file into a DataFrame (pd.read_csv).
 
@@ -39,6 +40,7 @@ Identified missing or incorrect data in columns like Ship_Mode and replaced them
 
 Changing Data Types:
 Converted the Order_Date column from object to datetime format for better manipulation (pd.to_datetime).
+
 Validated data type consistency for numerical calculations (e.g., Quantity, Unit_Selling_Price, etc.).
 
 4. Data Transformation:
@@ -55,23 +57,31 @@ Used vectorized operations in Pandas for these transformations.
 Aggregations:
 Grouped data by categories (Category, Region, etc.) using groupby to calculate metrics such as:
 -- Sum of Total_Sales and Total_Profit.
+
 -- Average sales per Category and Month.
--- Sorting and Filtering:
+
+   Sorting and Filtering:
+   
 -- Sorted data for top-performing entities (e.g., products, regions) using sort_values.
+
 -- Filtered data for specific conditions (e.g., only products in Technology or regions like South).
 
 5. Business Insights Derived
+6. 
 Year-over-Year Comparisons:
+
 -- Calculated and compared total sales for 2022 and 2023 grouped by Category or Sub_Category.
    
 -- Derived percentage growth for each category or region.
 
 Top Performers:
+
 -- Identified the highest-grossing subcategories, products, and regions.
 
 -- Determined months with the highest sales for each category (Furniture, Technology, etc.).
 
 Trends:
+
 -- Grouped data by Month_Year to analyze monthly sales trends over two years.
 
 -- Highlighted months with significant growth or decline.
@@ -82,27 +92,36 @@ Trends:
 ### Table name (orders)
 
 Data analysis using SQL. 
+
 Project Overview:
+
 This project involves the analysis of sales orders for a company, using SQL queries to extract insights into various business metrics 
+
 like sales, profits, product performance, regional sales, and year-over-year growth.
 
 The queries cover a wide range of tasks that are commonly performed in SQL-based data analysis projects:
-1. Data Exploration: 
+
+1. Data Exploration:
+   
 	You are retrieving distinct data points, aggregating data, and filtering for specific conditions (e.g., total sales, 
 	highest revenue products, etc.).
 
-2. Data Aggregation: 
+3. Data Aggregation:
+   
 	Queries like calculating total sales, profits, and revenue for products or regions are important in business analytics.
 
-3. Window Functions: 
+5. Window Functions:
+   
 	Using functions like ROW_NUMBER(), RANK(), and DENSE_RANK() shows advanced use of SQL for generating ranked lists 
 	and performing comparative analysis.
 
-4. Growth and Comparison: 
+7. Growth and Comparison:
+    
 	You're using SQL to compute month-over-month growth and category-based comparisons across multiple years 
 	(2022 and 2023). This is important in understanding business trends and making data-driven decisions.
 
-5. Category-Specific Insights: 
+9. Category-Specific Insights:
+    
 	Analyzing the highest-selling products or sub-categories, regional insights, and other category-based 
 	analyses is useful for understanding the business at a granular level.
 
@@ -130,24 +149,30 @@ Column Context:
 21. Month_Year: Combined Month and Year (e.g., 2023-03 for March 2023).
 
 Tasks Performed:
+
 1. Data Exploration & Filtering:
 	Extracted distinct cities, regions, categories, and other relevant fields.
+
 	Filtered orders by specific criteria (e.g., category = 'Technology', ship mode = 'Second Class').
 
-2. Aggregation and Calculation:
+3. Aggregation and Calculation:
 	Aggregated data for total sales, total profits, and quantity sold by product, region, and category.
+
 	Calculated average order value and total sales per order.
 
-3. Rankings & Comparisons:
+5. Rankings & Comparisons:
 	Used SQL window functions (ROW_NUMBER(), RANK(), DENSE_RANK()) to rank products, regions, and cities based on revenue or profit.
+
 	Identified top-performing products by revenue and profit.
 
-4. Year-over-Year Growth Analysis:
+7. Year-over-Year Growth Analysis:
 	Compared sales and profits between 2022 and 2023 for products, regions, and categories.
+
 	Computed growth percentage month-over-month for each year.
 
-5. Detailed Regional and Product Insights:
+9. Detailed Regional and Product Insights:
 	Analyzed sales trends and rankings by region.
+
 	Compared the sales and performance of products within each region, using window functions.
 
 Results and Insights:
@@ -162,6 +187,7 @@ Results and Insights:
 
 
 # Database Connection and Integration
+
 Establish a connection between Python and MySQL Workbench for data transfer and querying.
 
 1. Establishing the Connection:
@@ -172,6 +198,7 @@ Used Pandas to_sql() function to transfer a cleaned DataFrame to the MySQL datab
 
 3. Fetching Data from MySQL:
 Executed SQL queries directly on the MySQL table using SQLAlchemy.
+
 Fetching filtered rows directly into Python for further analysis or manipulation.
 
 # Two-Way Data Flow:
