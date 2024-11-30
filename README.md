@@ -164,4 +164,5 @@ Fetching filtered rows directly into Python for further analysis or manipulation
 
 # Two-Way Data Flow:
 -- Uploaded transformed data from Python to MySQL for structured storage.
+
 -- Retrieved specific subsets of data from MySQL back into Python for additional analysis.
