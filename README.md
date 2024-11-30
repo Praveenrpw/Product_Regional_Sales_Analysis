@@ -19,6 +19,7 @@ Loading the Dataset:
 Used Pandas to load the dataset from a .csv file into a DataFrame (pd.read_csv).
 
 -- Handled missing values by replacing entries such as 'Not Available' and 'unknown' with NaN using the na_values parameter.
+
 -- Verified column data types (dtypes) to ensure the correctness of the data structure.
 
 2. Data Exploration:
@@ -27,7 +28,9 @@ Used DataFrame.shape to determine the size of the dataset (rows and columns).
 
 Used DataFrame.info() and DataFrame.describe() to summarize the dataset:
 -- Identified numerical and categorical columns.
+
 -- Obtained statistical summaries (e.g., mean, max, min, etc.).
+
 -- Explored unique values in specific columns (e.g., Ship_Mode.unique()).
 
 3. Data Cleaning:
@@ -42,8 +45,11 @@ Validated data type consistency for numerical calculations (e.g., Quantity, Unit
 Derived New Columns:
 Created new calculated fields like:
 -- Total_Sales = Quantity * Unit_Selling_Price.
+   
 -- Profit_Per_Unit = Unit_Selling_Price - Cost_Price.
+
 -- Growth_Diff for year-over-year comparison (e.g., 2023 vs. 2022).
+
 Used vectorized operations in Pandas for these transformations.
 
 Aggregations:
@@ -57,14 +63,17 @@ Grouped data by categories (Category, Region, etc.) using groupby to calculate m
 5. Business Insights Derived
 Year-over-Year Comparisons:
 -- Calculated and compared total sales for 2022 and 2023 grouped by Category or Sub_Category.
+   
 -- Derived percentage growth for each category or region.
 
 Top Performers:
 -- Identified the highest-grossing subcategories, products, and regions.
+
 -- Determined months with the highest sales for each category (Furniture, Technology, etc.).
 
 Trends:
 -- Grouped data by Month_Year to analyze monthly sales trends over two years.
+
 -- Highlighted months with significant growth or decline.
 
 
@@ -144,8 +153,11 @@ Tasks Performed:
 Results and Insights:
 
 -- Highest Revenue Generating Products: List of the top 10 products based on total revenue.
+
 -- Top Performing Regions: Identification of regions with the highest sales and profits.
+
 -- Month-over-Month Growth: Insights into which months in 2022 and 2023 had the highest sales growth.
+
 -- Category Performance: Sub-categories with the highest sales growth in 2023 compared to 2022.
 
 
