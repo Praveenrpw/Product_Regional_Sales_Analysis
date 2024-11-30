@@ -67,7 +67,7 @@ Grouped data by categories (Category, Region, etc.) using groupby to calculate m
 -- Filtered data for specific conditions (e.g., only products in Technology or regions like South).
 
 5. Business Insights Derived
-6. 
+
 Year-over-Year Comparisons:
 
 -- Calculated and compared total sales for 2022 and 2023 grouped by Category or Sub_Category.
@@ -88,8 +88,8 @@ Trends:
 
 
 ### Data Analysis Using SQL
-### Schema name (sales)
-### Table name (orders)
+    Schema name (sales)
+    Table name (orders)
 
 Data analysis using SQL. 
 
